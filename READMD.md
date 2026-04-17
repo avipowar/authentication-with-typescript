@@ -21,3 +21,24 @@
     - for automatically call index.js
 
 7) initialize the git
+
+
+# Basic Express Code Setup
+
+1) npm i express
+
+2) npm i @types/express -D
+    - installs TypeScript type definitions for Express.
+    - what req, res look like
+    - what methods exist (app.get, app.post, etc.)
+    - what types functions expect
+
+3) npm i @types/node -D 
+    - TypeScript type definitions for Node.js.
+    - Provides types for the Node.js runtime
+    - fs, path, http modules
+    - global objects like process, __dirname, Buffer
+    - Node APIs and their types
+    - console.log(process.env.PORT); => Without this package, TypeScript doesn’t understand Node things: => Cannot find name 'process'
+
+4) make one req
