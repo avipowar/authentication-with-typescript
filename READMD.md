@@ -61,3 +61,31 @@
     - docker images => show what setup carry docker
     - docker compose up => run docker file
     - docker compose up -D => detach => run in background
+
+# Drizzle setup
+
+1) go to drizzle website
+
+2) create src/db/schema.ts
+
+3) run commands 
+    - npm i drizzle-orm pg dotenv => This command installs everything needed to connect and work with PostgreSQL using clean and safe code.
+    - npm i -D drizzle-kit tsx @types/pg
+        - Write schema in Drizzle
+        - drizzle-kit → generates SQL file
+        - You review SQL file
+        - Run migration → DB updated
+        - App uses pg + drizzle-orm to query DB
+
+4) Connect Drizzle ORM to the database
+
+5) Step 5 - Setup Drizzle config file
+
+6) create table 
+
+7) create studio command in package.json
+    - we see what is happing on db
+    
+8) before push schema inside db first generate sql file and reviewed this file
+
+9) then migrate into db
