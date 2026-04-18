@@ -42,3 +42,22 @@
     - console.log(process.env.PORT); => Without this package, TypeScript doesn’t understand Node things: => Cannot find name 'process'
 
 4) make one req
+
+# Docker postgresql setup
+
+1) download docker first 
+
+2) create docker.compose.yml file 
+    # write 
+        - services // define inside container 
+        - name of db service // create container using this name
+        - image:postgres  // take postgres from docker hub
+        - port // map the port 
+        - environment variable  // used to configure application without changing code 
+        - volumes : docker data is temporary. delete the container .so we map in my local file
+
+3) Running commands 
+    - docker ps => check running container 
+    - docker images => show what setup carry docker
+    - docker compose up => run docker file
+    - docker compose up -D => detach => run in background
