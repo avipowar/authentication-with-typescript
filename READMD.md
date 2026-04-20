@@ -89,3 +89,14 @@
 8) before push schema inside db first generate sql file and reviewed this file
 
 9) then migrate into db
+
+# make signUp Route
+
+1) create auth folder inside src/app/
+
+2) write route inside src/app/auth
+
+3) write controller inside src/app/auth
+
+4) write model(zod schema) inside src/app/auth
+    - npm i zod
