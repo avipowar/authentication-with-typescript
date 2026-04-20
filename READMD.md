@@ -100,3 +100,5 @@
 
 4) write model(zod schema) inside src/app/auth
     - npm i zod
+
+5) export route inside src/app/index.ts
