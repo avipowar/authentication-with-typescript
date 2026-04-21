@@ -102,3 +102,13 @@
     - npm i zod
 
 5) export route inside src/app/index.ts
+
+# make signIn Route 
+
+1) write route inside src/app/auth
+
+2) write controller inside src/app/auth
+
+3) write model(zod schema) inside src/app/auth
+
+4) export route inside src/app/index.ts
