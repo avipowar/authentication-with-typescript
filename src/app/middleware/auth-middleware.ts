@@ -12,17 +12,16 @@ export function authenticationMiddleware() {
             return res.status(400).json({error: "authorization header must starts with Bearer"})
         }
 
+
         const token = header.split(" ")[1]
 
         if(!token) return res.status(400).json({error: `authorization token starts with Bearer and followed by token` })
 
         const user = verifyUserToken(token)
-        console.log(user);
 
         // @ts-ignore
         req.user = user;
 
-        console.log(user)
 
         next();
 

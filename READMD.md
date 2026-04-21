@@ -1,3 +1,5 @@
+## Docker gives a ready-made, isolated environment where your app or database can run without manual setup.
+
 # setup the project 
 
 1) npm init -y => give package.json file => store dependency to your project 
