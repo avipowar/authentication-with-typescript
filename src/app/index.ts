@@ -1,5 +1,6 @@
 import express from "express"
 import { authRouter } from "./auth/routes"
+import { authenticationMiddleware } from "./middleware/auth-middleware"
 
 export function createApplication () {
     
@@ -7,6 +8,7 @@ export function createApplication () {
 
     // middlewares
     app.use(express.json())
+    app.use(authenticationMiddleware())
 
 
     //routes

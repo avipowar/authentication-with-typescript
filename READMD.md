@@ -113,12 +113,19 @@
 
 4) export route inside src/app/index.ts
 
+
 # create jwt token
 
 1) install npm i jsonwebtoken
 2) install npm i @types/jsonwebtoken
 
-3) create utils folder src/
-4) create token.ts file inside folder src/utils
+3) create utils folder src/app/auth
+4) create token.ts file inside folder src/app/auth/utils
 
 5) verify token is give correct data using jwt.io
+
+# write auth/me route 
+
+1) create middleware folder inside src/aap 
+2) cerate auth-middleware.ts file inside src/app/middleware
+3) write route , controller .
