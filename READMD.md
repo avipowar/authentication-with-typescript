@@ -112,3 +112,13 @@
 3) write model(zod schema) inside src/app/auth
 
 4) export route inside src/app/index.ts
+
+# create jwt token
+
+1) install npm i jsonwebtoken
+2) install npm i @types/jsonwebtoken
+
+3) create utils folder src/
+4) create token.ts file inside folder src/utils
+
+5) verify token is give correct data using jwt.io

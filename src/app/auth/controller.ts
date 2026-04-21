@@ -4,6 +4,7 @@ import { db } from "../../db";
 import { userTable } from "../../db/schema";
 import { eq } from "drizzle-orm";
 import { createHmac, randomBytes } from "node:crypto";
+import { createUserToken } from "../../utils/token";
 
 
 class AuthenticationController {
@@ -67,8 +68,9 @@ class AuthenticationController {
     if(userSelect.password !== hashPassword) return res.status(400).json({message : `email or password is incorrect`})
 
       //Todo: generate token
+      const token = createUserToken({id: userSelect.id})
 
-    return res.json({message : "SignIn Successfully", token : 1})
+    return res.json({message : "SignIn Successfully", data : token})
 
   }
 }
